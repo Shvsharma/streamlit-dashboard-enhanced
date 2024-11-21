@@ -50,3 +50,26 @@ st.bar_chart(
     x="week",
     y="Remote",
 )
+
+# Description
+st.markdown("### Insights")
+st.write("The bar chart below shows the distribution of learning modalities across schools.")
+
+# Visualization (Bar Chart Example)
+import matplotlib.pyplot as plt
+modality_counts = df['learning_modality'].value_counts()
+fig, ax = plt.subplots()
+modality_counts.plot(kind='bar', ax=ax)
+ax.set_title('Distribution of Learning Modalities')
+st.pyplot(fig)
+
+# Description
+st.markdown("### Filter Data by District")
+st.write("Use the dropdown menu below to select a specific district. Once selected, the table will display only the data for that district.")
+
+# Add interactive dropdown to filter by district
+district = st.selectbox('Select a District', df['district_name'].unique())
+filtered_df = df[df['district_name'] == district]
+
+# Display filtered data
+st.dataframe(filtered_df)
