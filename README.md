@@ -12,4 +12,4 @@ This dashboard visualizes the NCES School Learning Modalities data, providing in
 
 ## Live Dashboard
 View the deployed Streamlit dashboard here:
-[Live Dashboard](https://zany-potato-6977wqg6jxwf5v6x-8501.app.github.dev)
+[Live Dashboard]([https://zany-potato-6977wqg6jxwf5v6x-8501.app.github.dev](https://shvsharma-streamlit-dashboard-enhanced-dashboard-ojzw2s.streamlit.app/))
